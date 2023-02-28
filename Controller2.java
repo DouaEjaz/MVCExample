@@ -62,8 +62,7 @@ public class Controller2 extends JFrame
             view4.clear();
         }
         if (e.getSource() == incaB) {
-            view3.update();
-            view4.update();
+            model.modifyB();
         }
         
     } // actionPerformed
