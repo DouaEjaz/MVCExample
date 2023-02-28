@@ -37,14 +37,17 @@ public class Controller2 extends JFrame
         clearViews = new JButton("Clear views");
         window.add(clearViews);
         clearViews.addActionListener(this);
-        refreshViews = new JButton("Refresh views");
-        window.add(refreshViews);
-        refreshViews.addActionListener(this);
+        incaB = new JButton("Increment B");
+        window.add(incaB);
+        incaB.addActionListener(this);
         // Create views
         view3 = new View3(this, model);
         window.add(view3);
         view4 = new View4(this, model);
         window.add(view4);
+        
+        
+        
         
         // Display the frame
         setVisible(true);
@@ -58,7 +61,7 @@ public class Controller2 extends JFrame
             view3.clear();
             view4.clear();
         }
-        if (e.getSource() == refreshViews) {
+        if (e.getSource() == incaB) {
             view3.update();
             view4.update();
         }
